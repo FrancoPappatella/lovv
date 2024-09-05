@@ -19,24 +19,21 @@ body, html {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 1rem;
     font-size: 1.25rem;
-    margin-bottom: 1.25rem; 
+    padding: 0.1rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
 }
 
-.countdown p {
-    margin: 0;
-}
+
 
 .container {
     text-align: center;
     width: 100%;
     max-width: 31.25rem; 
-    padding: 1.25rem;
+    padding: 0.2rem;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -52,8 +49,13 @@ h2 {
     margin-top: 2rem;
 }
 
+h2 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
 .content-box {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     background-color: #fff;
     padding: 1.25rem;
     border-radius: 0.5rem;
@@ -84,14 +86,17 @@ button {
     cursor: pointer;
     border-radius: 5px;
     border: none;
-    background-color: #ff4081;
     color: white;
     position: relative;
 }
 
+#yes-btn{
+    background-color: #4119e1;
+}
 #no-btn {
     transition: left 0.2s, top 0.2s; 
     touch-action: manipulation;
+    background-color: #000000;
 }
 
 button:disabled {
@@ -104,24 +109,39 @@ button:disabled {
     font-size: 3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1001px) {
     h1 {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
     }
     .container {
         max-width: 30rem;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+    #days-remaining{
+        font-size: 1rem;
+    }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+    .container {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 1.2rem;
     }
     button {
         font-size: 1.2rem;
         padding: 8px 16px;
     }
     .countdown {
-        font-size: 1rem; 
+        font-size: 0.8rem; 
+    }
+    .container {
+       margin-top: 1.2rem;
     }
 }

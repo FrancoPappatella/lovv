@@ -2,12 +2,13 @@ const contentBox = document.getElementById('content');
 const noBtn = document.getElementById('no-btn');
 const yesBtn = document.getElementById('yes-btn');
 const emoji = document.getElementById('emoji');
-// Array de mensajes o imágenes
+
 const messages = [
-    'Eres lo mejor que me ha pasado',
-    'Cada día contigo es especial',
-    'Te amo más que a nada',
-    'Gracias por hacerme tan feliz',
+    'Me haces muy bien',
+    'Alegras todos mis dias',
+    'Te amo demasiado, no te vayas nunca de mi vida',
+    'Nunca imaginé tener a alguien tan buena como vos a mi lado',
+    'Pará, pará, pará, ¿vos me estás cargando?',
 ];
 
 let index = 0;
@@ -36,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // Mostrar el número de días y el emoji
         const countdownElement = document.getElementById('days-remaining');
-        countdownElement.innerHTML = `Faltan ${daysRemaining} días para que nos veamos ❤️`;
+        const texto = daysRemaining <= 0 ? `¡¡¡MI AMOR, LLEGO EL DÍA!!! 💓😍😭❤️` : `Bebe! solo faltan ${daysRemaining} días para que nos veamos ❤️😍`;
+        countdownElement.innerHTML = texto ;
     }
     
     // Actualizar el contador al cargar la página
@@ -49,8 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const yesButton = document.getElementById('yes-btn');
     const noButton = document.getElementById('no-btn');
     const emoji = document.getElementById('emoji');
+    const yesText = document.getElementById('yes-text');
 
     function moveNoButton() {
+        emoji.innerHTML = '😎';
         const x = Math.random() * (window.innerWidth - noButton.clientWidth);
         const y = Math.random() * (window.innerHeight - noButton.clientHeight);
         noButton.style.position = 'absolute';
@@ -64,5 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     yesButton.addEventListener('click', function () {
         emoji.innerHTML = '😍';
+        yesText.innerHTML = "TE AMO MI VIDA <3";
     });
 });
