@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // Mostrar el número de días y el emoji
         const countdownElement = document.getElementById('days-remaining');
-        const texto = daysRemaining <= 0 ? `¡¡¡MI AMOR, LLEGO EL DÍA!!! 💓😍😭❤️` : `Bebe! solo faltan ${daysRemaining} días para que nos veamos ❤️😍`;
+        const texto = daysRemaining <= 0 ? `¡¡¡MI AMOR, LLEGO EL DÍA!!! 💓😍😭❤️` : `Bebe! solo faltan ${daysRemaining} días para que nos veamos 😍`;
         countdownElement.innerHTML = texto ;
     }
     
