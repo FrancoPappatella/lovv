@@ -5,7 +5,7 @@ const emoji = document.getElementById('emoji');
 
 const messages = [
     'Me haces muy bien',
-    'Alegras todos mis dias',
+    'Alegras todos mis dias amorcito',
     'Te amo demasiado, no te vayas nunca de mi vida',
     'Nunca imaginé tener a alguien tan buena como vos a mi lado',
     'Sueño con vivir con vos y alcanzar juntos nuestras metas',
@@ -30,7 +30,7 @@ const messages = [
     'Muero de ganas de conocerte, y llenarte de besitos cuando te vea',
     'ME ENCANTASS MIERDA TE AMO DEMASIADO',
     'Sos increíble Alessia',
-    'Disfruto cada segundo que estoy con vos',
+    'Disfruto cada segundo que estoy con vos bebé hermosa',
     'No puedo estar más a gusto con vos',
     'Para hacerme feliz basta con verte feliz a vos',
     'Pará, pará, pará, ¿vos me estás cargando?',
